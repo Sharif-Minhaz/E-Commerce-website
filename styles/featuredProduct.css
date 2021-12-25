@@ -1,0 +1,96 @@
+/* feature products */
+.featured-body {
+    padding-top: 40px;
+}
+.featured-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+.featured-heading span:first-child {
+    font-size: 30px;
+}
+.featured-heading span:last-child {
+    font-size: 15px;
+    color: var(--gray-light);
+}
+.featured-row {
+    gap: 24px;
+}
+.featured-box {
+    position: relative;
+}
+.discount-offer {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--dark-light);
+    font-size: 15px;
+    padding: 4px 6px;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+.types {
+    position: absolute;
+    bottom: 20px;
+    left: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.types span:first-child {
+    font-size: 14px;
+    color: var(--golden-color);
+}
+.types span:nth-child(2) {
+    font-size: 18px;
+    color: var(--default-color);
+}
+.product-price {
+    font-size: 15px;
+    left: 20px;
+    bottom: -10px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.featured-box:hover .discount-offer {
+    background-color: var(--golden-color);
+}
+.featured-box:hover .types {
+    position: absolute;
+    bottom: 40px;
+}
+.featured-box:hover .product-price {
+    bottom: 10px;
+    visibility: visible;
+    opacity: 1;
+}
+@media (max-width: 1317px){
+    .left-partition .col-12 .featured-img {
+        display: flex;
+        justify-content: right;
+    }
+    .right-partition .col-12 .featured-img {
+        display: flex;
+        justify-content: left;
+    }
+    .single-img-partition {
+        height: 532px;
+        width: 369px;
+    }
+    .row .col-12 .featured-img .featured-box img {
+        width: 300px;
+    }
+}

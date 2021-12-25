@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>eCommerce - website</title>
+		<link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./assets/lib/bootstrap-5.1/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+		<link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick.css" />
+		<link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick-theme.css" />
+		<link rel="stylesheet" href="./assets/lib/OwlCarousel2-2.3.4/dist/css/owl.carousel.css" />
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/home.css" />
+		<link rel="stylesheet" href="./styles/discountProduct.css" />
+		<link rel="stylesheet" href="./styles/bestProduct.css" />
+		<link rel="stylesheet" href="./styles/howWeWork.css" />
+		<link rel="stylesheet" href="./styles/featuredProduct.css" />
+		<link rel="stylesheet" href="./styles/favoriteOffers.css" />
+		<link rel="stylesheet" href="./styles/newsLetter.css" />
+		<link rel="stylesheet" href="./styles/blogAndNews.css" />
+		<link rel="stylesheet" href="./styles/review.css" />
+		<link rel="stylesheet" href="./styles/bottomNewsLetter.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+	</head>
+	<body>
+		<!-- go to top button -->
+		<a href="#" class="goTop">
+			<span class="fas fa-arrow-up"></span>
+		</a>
+		<!-- news latter popup -->
+		<div class="newsLatter-wrapper hidden-wrapper">
+			<div class="news-letter-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="dividing-sections">
+							<div class="col-md-6 col-12">
+								<div class="des-section">
+									<div class="cls-btn-newsletter">
+										<span><i class="far fa-times-circle"></i></span>
+									</div>
+									<div class="heading-newsletter">
+										Subscribe our newsletter
+									</div>
+									<div class="short-des-newsletter">
+										Aobortis conubialaoreet pellentesque quod olorem nibh eius Facilis voluptate
+									</div>
+									<div class="agree-term">
+										Agree <a href="#">terms</a> and <a href="#">condition</a> 
+									</div>
+									<form class="subscribe-box">
+										<input type="email" placeholder="Enter your mail" required>
+										<button type="submit">Subscribe</button>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 col-12">
+								<div class="newLatter-img">
+									<img src="./assets/images/newsletter-popup-img.png" alt="newsletter">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- menu wrapper -->
+		<div class="menu-wrapper">
+			<div class="menu-wrapper-heading">
+				Fortune.
+			</div>
+			<div class="accordion-links">
+				<div class="accordion custom-accordion" id="accordionExample"> 
+					<a href="#" class="wrap-link extra-padding">Home</a>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button custom-acc-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Shop
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body custom-acc-body">
+								<a href="#">Single Shop</a>
+								<a href="#">Details Shop</a>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button custom-acc-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Pages
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body custom-acc-body">
+								<a href="#">Login</a>
+								<a href="#">Cart</a>
+								<a href="#">Checkout</a>
+								<a href="#">404 Page</a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="wrap-link">Contact Us</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<!-- main navbar -->
+			<nav class="main-nav">
+				<div class="links">
+					<a href="#" class="slider-logo"><i class="fas fa-sliders-h"></i></a>
+					<a href="#">Home</a>
+					<div class="shop-link">
+						<a href="#" class="sub-menu">Shop</a>
+						<div class="expand-menu">
+							<a href="#">Single Shop</a>
+							<a href="#">Details Shop</a>
+						</div>
+					</div>
+					<div class="shop-link">
+						<a href="#" class="sub-menu">Pages</a>
+						<div class="expand-menu">
+							<a href="#">Login</a>
+							<a href="#">Cart</a>
+							<a href="#">Checkout</a>
+							<a href="#">404 page</a>
+						</div>
+					</div>					
+					<a href="#">Contact Us</a>
+				</div>
+				<div class="brand">
+					<a href="#">Fortune.</a>
+				</div>
+				<div class="menus">
+					<a href="#">Login</a>
+					<span> | </span>
+					<a href="#" id="searching"><i class="fas fa-search"></i></a>
+					<a href="#"><i class="far fa-heart"></i></a>
+					<a href="#"><i class="fas fa-shopping-bag"></i></a>
+				</div>
+				<!-- nav button on screen changes -->
+				<div class="nav-menu-btn">
+					<a href="#" class="bars-btn"><span class="nav-menu-btn-bars"><i class="fas fa-bars"></i></span></a>
+					<a href="#" class="cross-btn"><span class="nav-menu-btn-x"><i class="fas fa-times"></i></span></a>
+				</div>
+			</nav>
+			<div class="search-bar-wrapper-hide">
+				<div class="search-option">
+					<span>Search</span>
+					<span class="cls-btn"><i class="fas fa-times"></i></span>
+					<form class="search-input">
+						<input type="search" name="search" id="search-box" placeholder="Search text">
+						<button type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+			<!-- intro -->
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col-xl-6 order-content-1 col-sm-12 info-section">
+						<div class="single-item">
+							<!-- slider Contents -->
+							<div class="into-box">
+								<div class="discount">Up to 30% off</div>
+								<div class="intro-product-name">Minimal Lighting Nordic</div>
+								<div class="description" id="pin">Penises got minima uas enid sit ipsum nascetur, platea netus proident scout</div>
+								<button class="shop-btn">Shop Now</button>
+							</div>
+							<!-- slider Contents -->
+							<div class="into-box">
+								<div class="discount">Maximum 90% off</div>
+								<div class="intro-product-name">Minimal Lighting Nordic</div>
+								<div class="description">Penises got minima uas enid sit ipsum pasteur, platea netus proident scout</div>
+								<button class="shop-btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 order-content-2 col-sm-12 product-section">
+						<div class="sliding-btns">
+							<span>1</span>
+							<span>2</span>
+						</div>
+						<div class="fade-effect overflow-hidden z-index:1">
+							<img class="intro-img" src="./assets/images/home-one-hero-slide-img-1.png" alt="chair">
+							<img class="intro-img slider-content-2" src="./assets/images/home-one-hero-slide-img-2.png" alt="chair">
+						</div>
+						<div class="background"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- discounted product -->
+		<section class="container-fluid">
+			<div class="container-body">
+				<div class="row grid-gap">
+					<div class="col-xl-4 col-md-6 col-sm-12">
+						<div class="dis-product slide-from-top">
+							<img src="./assets/images/home-one-offer-img-1.png" alt="offer">
+							<div class="dis-product-info">
+								<span class="swing">DISCOUNT UPTO 50%</span>
+								<span>Hanging Black <br>Light</span>
+								<p>
+									<a href="#">SHOP NOW</a>
+								</p>								
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6 col-sm-12">
+						<div class="dis-product slide-from-top">
+							<img src="./assets/images/home-one-offer-img-2.png" alt="offer">
+							<div class="dis-product-info">
+								<span class="swing">DISCOUNT UPTO 50%</span>
+								<span>Folding Chair <br>Furniture</span>
+								<p>
+									<a href="#">SHOP NOW</a>
+								</p>								
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6 col-sm-12">
+						<div class="dis-product slide-from-top">
+							<img src="./assets/images/home-one-offer-img-3.png" alt="offer">
+							<div class="dis-product-info">
+								<span class="swing">DISCOUNT UPTO 50%</span>
+								<span>Hanging Black <br>Light</span>
+								<p>
+									<a href="#">SHOP NOW</a>
+								</p>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- discount description -->
+		<section>
+			<div class="description-area">
+				<span>At earum nisl vivamus quaerat dignissim! Ipsam primis cupidatat quisquam <a href="#" class="des-text">Shop Now</a></span>
+			</div>
+		</section>
+		<!-- best products -->
+		<section class="container-fluid">
+			<div class="container-body">
+				<div class="controls">
+					<span class="best-product">Best products</span>
+					<div class="mix-controler">
+						<span class="control" data-sort="default:asc">BEST SELLERS</span>
+						<span class="control" data-sort="random">FEATURED</span>
+						<span class="control" data-sort="default:desc">TOP PRODUCTS</span>
+					</div>
+					<a href="#">See All <i class="fas fa-chevron-right"></i></a>
+				</div>
+				<div class="mix-container">
+					<div class="mix">
+						<!-- first product -->
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-1.png" alt="product-1">
+							<span class="discount-rate">60% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span>( 31 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent light chair</a>
+							</div>
+							<div class="product-price">
+								$55.00 <del>$120.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- second product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-2.png" alt="product-2">
+							<span class="new-available">New</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star-half-alt"></span>
+									<span>( 33 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Apple black headphone</a>
+							</div>
+							<div class="product-price">
+								$50.00 <del>$100.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- third product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-3.png" alt="product-3">
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="far fa-star"></span>
+									<span>( 53 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Apple music setup</a>
+							</div>
+							<div class="product-price">
+								$80.00 <del>$140.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="pink-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- fourth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-4.png" alt="product-4">
+							<span class="discount-rate">60% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span>( 45 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent light roof minimal</a>
+							</div>
+							<div class="product-price">
+								$30.00 <del>$90.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- fifth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-5.png" alt="product-5">
+							<span class="discount-rate">50% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star-half-alt"></span>
+									<span>( 145 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent golden roof minimal</a>
+							</div>
+							<div class="product-price">
+								$45.00 <del>$90.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- sixth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-6.png" alt="product-6">
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span>( 24 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent golden watch</a>
+							</div>
+							<div class="product-price">
+								$130.00 <del>$190.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- seventh product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-7.png" alt="product-7">
+							<span class="discount-rate">45% Off</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star-half-alt"></span>
+									<span>( 62 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">APL security camera</a>
+							</div>
+							<div class="product-price">
+								$160.00 <del>$290.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="golden-block"></div>
+							</div>
+						</div>
+					</div>
+					<!-- eighth product -->
+					<div class="mix">
+						<div class="product-img">
+							<img src="./assets/images/shope-two-prodict-img-8.png" alt="product-8">
+							<span class="new-available">New</span>
+							<div class="panel">
+								<a href="#"><i class="fas fa-sync-alt"></i></a>
+								<a href="#"><i class="fas fa-heart"></i></a>
+								<a href="#"><i class="fas fa-cart-arrow-down"></i></a>
+								<a href="#"><i class="fas fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="details-info">
+							<div class="review">
+								<div class="stars">
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="fas fa-star"></span>
+									<span class="far fa-star"></span>
+									<span>( 58 reviews )</span>
+								</div>
+							</div>
+							<div class="product-name">
+								<a href="#">Pendent office chair</a>
+							</div>
+							<div class="product-price">
+								$80.00 <del>$109.00</del> 
+							</div>
+							<div class="product-colors">
+								<div class="black-block"></div>
+								<div class="gray-block"></div>
+								<div class="pink-block"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- how we work -->
+		<section class="how-we-work">
+			<div class="container-body">
+				<div class="row">
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="work-partition">
+							<span>UP TO 30% OFF</span> 
+							<span>How we work</span> 
+							<span>Aces eius fusce ab in maiores mus <br>mollis Aliquet sempero.</span> 
+							<a href="#">SHOP NOW</a>
+						</div> 
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="policy">
+							<div class="policy-icon">
+								<i class="fas fa-unlock-alt"></i>
+							</div>
+							<span class="policy-naming">
+								Free shipping
+							</span>
+							<div class="policy-details">
+								Aces eius fusce ab in maiores mus <br>mollis! Aliquet
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="policy">
+							<div class="policy-icon">
+								<i class="fas fa-redo-alt"></i>
+							</div>
+							<span class="policy-naming">
+								Return policy 10 days
+							</span>
+							<div class="policy-details">
+								Aces eius fusce ab in maiores mus <br>mollis! Aliquet
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-sm-12">
+						<div class="policy">
+							<div class="policy-icon">
+								<i class="fas fa-globe-americas"></i>
+							</div>
+							<span class="policy-naming">
+								World wide services
+							</span>
+							<div class="policy-details">
+								Aces eius fusce ab in maiores mus <br>mollis! Aliquet
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- featured product -->
+		<section class="container-fluid">
+			<div class="container-body">
+				<div class="featured-heading">
+					<span>Featured Product</span>
+					<span>Robotism conubialaoreet pellentesque quod olorem nibh eius Facilis voluptate sequoya</span>
+				</div>
+				<div class="featured-body">
+					<div class="row">
+						<div class="col-xl-4 col-md-6">
+							<!-- partition for 2 images -->
+							<div class="row featured-row left-partition">
+								<div class="col-12">
+									<div class="featured-img">
+										<div class="featured-box">
+											<img src="./assets/images/home-one-featured-img-1.png" alt="featured-img-1">
+											<div class="discount-offer">60% Off</div>
+											<div class="types">
+												<span>Decoration</span>
+												<span>Pendent white light</span>
+											</div>
+											<div class="product-price">$36.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="featured-img">
+										<div class="featured-box">
+											<img src="./assets/images/home-one-featured-img-2.png" alt="featured-img-2">
+											<div class="discount-offer">60% Off</div>
+											<div class="types">
+												<span>Decoration</span>
+												<span>Pendent sun light</span>
+											</div>
+											<div class="product-price">$46.00</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<!-- partition for 1 image -->
+							<div class="featured-img">
+								<div class="featured-box">
+									<img class="single-img-partition" src="./assets/images/home-one-featured-img-3.png" alt="featured-img-3">
+									<div class="discount-offer">30% Off</div>
+									<div class="types">
+										<span>Decoration</span>
+										<span>Storm long light</span>
+									</div>
+									<div class="product-price">$336.00</div>
+								</div>						
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-12">
+							<!-- partition for 2 images -->
+							<div class="row featured-row right-partition">
+								<div class="col-12">
+									<div class="featured-img">
+										<div class="featured-box">
+											<img class="single-featured-img" src="./assets/images/home-one-featured-img-4.png" alt="featured-img-4">
+											<div class="discount-offer">60% Off</div>
+											<div class="types">
+												<span>Hand watch</span>
+												<span>SPL hand watch</span>
+											</div>
+											<div class="product-price">$136.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="featured-img">
+										<div class="featured-box">
+											<img src="./assets/images/home-one-featured-img-5.png" alt="featured-img-5">
+											<div class="discount-offer">60% Off</div>
+											<div class="types">
+												<span>Decoration</span>
+												<span>Kingdom light</span>
+											</div>
+											<div class="product-price">$246.00</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- favorite offers -->
+		<section class="container-fluid fav-prod">
+			<div class="container-body">
+				<div class="fav-prod-head">
+					<span>Favorite Offers</span>
+					<span>Aobortis conubialaoreet pellentesque quod olorem nibh eius Facilis voluptate sequuy</span>
+				</div>
+				<div class="owl-carousel carousel-1">
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-1.png" alt="img-1">
+						<span class="prod-status">60% Off</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Stand Light Premium</span>
+								<span>$36.00</span>	
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-2.png" alt="img-2">
+						<span class="prod-status">-30%</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Hanging Light Premium</span>
+								<span>$30.00</span>	
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-3.png" alt="img-3">
+						<span class="prod-status-dir">On Sell</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Hanging Light ancient</span>
+								<span>$45.00</span>	
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-4.png" alt="img-4">
+						<span class="prod-status">Top Sell</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Super Chair Premium</span>
+								<span>$26.00</span>	
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-2.png" alt="img-2">
+						<span class="prod-status">-30%</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Hanging Light Premium</span>
+								<span>$30.00</span>	
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-4.png" alt="img-4">
+						<span class="prod-status">Top Sell</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Super Chair Premium</span>
+								<span>$26.00</span>	
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content">
+						<img src="./assets/images/home-two-arrival-img-3.png" alt="img-3">
+						<span class="prod-status-dir">On Sell</span>
+						<div class="naming-fav-prod">
+							<div class="prod-body">
+								<span>Hanging Light ancient</span>
+								<span>$45.00</span>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- blog and news -->
+		<section class="container-fluid">
+			<div class="container-body">
+				<div class="blogAndNews-head">
+					<span>Blog And News</span>
+					<span>Aobortis conubialaoreet pellentesque quod olorem nibh eius Facilis voluptate sequuy</span>
+				</div>
+				<div class="owl-carousel carousel-2">
+					<div class="carousel-content-2">
+						<img src="./assets/images/home-one-blog-img-1.png" alt="img-1">
+						<div class="date-blog">
+							09 Oct 21
+						</div>
+						<div class="blog-des">
+							<div class="author-info">
+								<p>By (<a href="#">RT Suharto</a>) | <a href="#">Comments (56)</a></p>
+							</div>
+							<div class="blog-topic">
+								<h4><a href="#">Quibusdam sapiente neque irure quas diam ligula at</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content-2">
+						<img src="./assets/images/home-one-blog-img-2.png" alt="img-2">
+						<div class="date-blog">
+							19 Sep 21
+						</div>
+						<div class="blog-des">
+							<div class="author-info">
+								<p>By (<a href="#">RT Suharto</a>) | <a href="#">Comments (36)</a></p>
+							</div>
+							<div class="blog-topic">
+								<h4><a href="#">Quibusdam sapiente neque irure quas diam ligula at</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content-2">
+						<img src="./assets/images/home-one-blog-img-3.png" alt="img-3">
+						<div class="date-blog">
+							05 Feb 21
+						</div>
+						<div class="blog-des">
+							<div class="author-info">
+								<p>By (<a href="#">RT Suharto</a>) | <a href="#">Comments (56)</a></p>
+							</div>
+							<div class="blog-topic">
+								<h4><a href="#">Quibusdam sapiente neque irure quas diam ligula at</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content-2">
+						<img src="./assets/images/home-one-blog-img-1.png" alt="img-1">
+						<div class="date-blog">
+							09 May 21
+						</div>
+						<div class="blog-des">
+							<div class="author-info">
+								<p>By (<a href="#">RT Suharto</a>) | <a href="#">Comments (50)</a></p>
+							</div>
+							<div class="blog-topic">
+								<h4><a href="#">Quibusdam sapiente neque irure quas diam ligula at</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-content-2">
+						<img src="./assets/images/home-one-blog-img-2.png" alt="img-2">
+						<div class="date-blog">
+							09 May 21
+						</div>
+						<div class="blog-des">
+							<div class="author-info">
+								<p>By (<a href="#">RT Suharto</a>) | <a href="#">Comments (26)</a></p>
+							</div>
+							<div class="blog-topic">
+								<h4><a href="#">Quibusdam sapiente neque irure quas diam ligula at</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- review -->
+		<section class="review-section">
+			<div class="container-body pb-4">
+				<div class="owl-carousel carousel-3">
+					<div class="carousel-content-3"> 
+						<img src="./assets/images/review1.png" alt="review1">
+						<div class="review-name">
+							Rahman Shishir
+						</div>
+						<div class="review-content">
+							Aorttitor lacus commodo accusantium quos iaculis quod tincidunt penatibus? Et <br>
+							nonummy exercitation, tellus, tempor viverra
+						</div>
+						<div class="customer-type">
+							Regular Customer
+						</div>
+					</div>
+					<div class="carousel-content-3"> 
+						<img src="./assets/images/review2.png" alt="review2">
+						<div class="review-name">
+							Zahid Hassan
+						</div>
+						<div class="review-content">
+							Aorttitor lacus commodo accusantium quos iaculis quod tincidunt penatibus? Et <br>
+							nonummy exercitation, tellus, tempor viverra
+						</div>
+						<div class="customer-type">
+							Regular Customer
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- bottom newsLetter -->
+		<section class="container-fluid">
+			<div class="container-body pb-5">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 bottom-newsletter-text">
+						<div class="news-btm-head pb-3">
+							Subscribe our newsletter
+						</div>
+						<div class="news-btm-des">
+							Aobortis conubialaoreet pellentesque quod olorem nibh eius Facilis voluptate sequuy
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 newsletter-second-part">
+						<form action="http://localhost:8080" class="btm-news-form">
+							<div class="support-news-letter">
+								<input class="news-btm-mail" type="email" placeholder="Enter your mail">
+								<button type="submit">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer section -->
+		<footer class="container-fluid">
+			<div class="container-body">
+				<div class="row">
+					<div class="col-xl-3 col-md-6 col-12">
+						<div class="footer-heading">
+							Customer Services
+						</div>
+						<div class="footer-des">
+							Aempor tellus dictumst lectus earum necessitatibus consequunturo
+						</div>
+						<div class="location-head">
+							LOCATION
+						</div>
+						<div class="location-place">
+							754 Road, 36 Floor New York, USA
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-12">
+						<div class="footer-heading">
+							Our Shop
+						</div>
+						<div class="footer-links">
+							<a href="#">Wooden Chair</a>
+							<a href="#">Plastic Table</a>
+							<a href="#">Pendent Light</a>
+							<a href="#">Bottle</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-12">
+						<div class="footer-heading">
+							Useful Links
+						</div>
+						<div class="footer-links">
+							<a href="#">About Us</a>
+							<a href="#">Tearm of Service</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Shipping</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6 col-12">
+						<div class="footer-heading">
+							Social Profile
+						</div>
+						<div class="download-des">
+							Download From <br>App Store
+						</div>
+						<div class="app-stores">
+							<a href="#">
+								<img src="./assets/images/footer-app-img-1.png" alt="app-1">
+							</a>
+							<a href="#">
+								<img src="./assets/images/footer-app-img-2.png" alt="app-2">
+							</a>
+						</div>
+					</div>
+					<!-- last section for footer -->
+					<div class="col-12">
+						<div class="container-fluid p-0">
+							<div class="row last-footer-sec">
+								<div class="col-md-3 col-12 icon-align">
+									<div class="social-media-icons">
+										<a href="#"><span><i class="fab fa-facebook"></i></span></a>
+										<a href="#"><span><i class="fab fa-instagram"></i></span></a>
+										<a href="#"><span><i class="fab fa-twitter"></i></span></a>
+										<a href="#"><span><i class="fab fa-youtube"></i></span></a>
+										<a href="#"><span><i class="fab fa-pinterest"></i></span></a>
+									</div>
+								</div>
+								<div class="col-md-9 col-12 copyright-align">
+									All right reserved © by Egens Lab & designed by Minhaz
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./assets/lib/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
+		<script src="./assets/lib/bootstrap-5.1/bootstrap.bundle.min.js"></script>
+		<script src="./assets/lib/slick-1.8.1/slick/slick.min.js"></script>
+		<script src="./assets/lib/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+		<script src="./assets/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+		<script src="./scripts/slick.js"></script>
+		<script src="./scripts/main.js"></script>
+	</body>
+</html>

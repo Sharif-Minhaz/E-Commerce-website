@@ -1,0 +1,80 @@
+/* discounted product */
+.grid-gap {
+	row-gap: 24px;
+}
+.dis-product {
+	overflow: hidden;
+	position: relative;
+	background-color: var(--main-bg-dark);
+}
+.dis-product img {
+	width: 100%;
+	z-index: 9999;
+}
+.dis-product-info {
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	position: absolute;
+	top: 0;
+	padding: 30px;
+	z-index: 99;
+}
+.dis-product-info span:first-child {
+	font-size: 14px;
+	color: var(--golden-color);
+}
+.dis-product-info span:nth-child(2) {
+	font-size: 30px;
+}
+.dis-product-info p a {
+	display: inline-block;
+	border-bottom: 2px solid var(--golden-color);
+}
+.slide-from-top:hover::after {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all 0.35s;
+}
+.slide-from-top::after {
+	content: "";
+	background-color: var(--golden-dark);
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	top: -100%;
+	bottom: 100%;
+	transition: all 0.35s;
+}
+.slide-from-top:hover .swing {
+	transform: rotateX(360deg);
+	-webkit-transform: rotateX(360deg);
+	-moz-transform: rotateX(360deg);
+	-ms-transform: rotateX(360deg);
+	-o-transform: rotateX(360deg);
+}
+.swing {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+/* discount description */
+.description-area span {
+    color: var(--default-color);
+}
+.des-text {
+    color: var(--golden-color);
+    text-decoration: underline;
+}
+.description-area {
+    background-color: var(--main-bg-dark);
+    margin-top: 60px;
+    padding: 30px;
+    text-align: center;
+    vertical-align: middle;
+}

@@ -1,0 +1,47 @@
+/* how we work */
+.how-we-work {
+    margin-top: 60px;
+    background-color: var(--main-bg-dark);
+}
+.work-partition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 60px;
+}
+.work-partition span:first-child {
+    margin-bottom: -11px;
+    font-size: 14px;
+    color: var(--golden-color);
+}
+.work-partition span:nth-child(2) {
+    font-size: 30px;
+    color: var(--default-color);
+}
+.work-partition span:nth-child(3) {
+    font-size: 15px;
+    color: var(--gray-light);
+}
+.work-partition a {
+    display: inline-block;
+    width: 88px;
+    border-bottom: 2px solid var(--golden-color);
+}
+.policy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+.policy-icon {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+.policy-naming {
+    font-size: 18px;
+}
+.policy-details {
+    font-size: 15px;
+    color: var(--gray-light);
+}

@@ -1,0 +1,41 @@
+/* bottom newsLetter */
+.btm-newsLetter {
+	background-color: var(--main-bg-light);
+	margin-top: 50px;
+}
+.news-btm-head {
+	font-size: 30px;
+}
+.news-btm-des {
+	font-size: 14px;
+	color: var(--ash-color);
+}
+.support-news-letter {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.btm-news-form .news-btm-mail {
+	width: 270px;
+	padding: 9px;
+}
+.btm-news-form button {
+	background-color: var(--golden-color);
+	border-color: var(--golden-color);
+	padding: 11px;
+	border-right: none;
+	border-bottom: 1px solid var(--golden-color);
+	margin-left: -5px;
+	color: var(--main-bg-light);
+	width: 145px;
+	font-size: 14px;
+}
+@media (max-width: 767px) {
+	.bottom-newsletter-text {
+		text-align: center;
+	}
+	.support-news-letter {
+		padding-top: 30px;
+		justify-content: center;
+	}
+}

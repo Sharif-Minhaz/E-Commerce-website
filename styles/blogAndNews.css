@@ -1,0 +1,75 @@
+/* blog and news */
+.blogAndNews-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 40px;
+}
+.blogAndNews-head span:first-child {
+	font-size: 29px;
+}
+.blogAndNews-head span:nth-child(2) {
+	font-size: 14px;
+	color: var(--gray-color);
+}
+.carousel-content-2 {
+	position: relative;
+	background-color: var(--milky-color);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+/* carousel dot modification for slider 2 start */
+.carousel-2 .owl-nav button.owl-prev,
+.carousel-2 .owl-nav button.owl-next {
+	visibility: hidden;
+}
+.carousel-2 button.owl-dot {
+	width: 15px;
+	height: 15px;
+	background-color: #e5e5e5;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.carousel-2 .owl-dots {
+	padding: 20px;
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel-2 button.active {
+	background-color: var(--golden-color) !important;
+}
+/* carousel dot modification for slider 2 end */
+.blog-des {
+	padding: 17px;
+}
+.date-blog {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 15px;
+	display: inline-block;
+	background-color: var(--default-color);
+	padding: 4px 8px;
+	color: var(--main-bg-light);
+}
+.author-info p {
+	font-size: 14px;
+}
+.blog-topic h4 {
+	font-size: 19px;
+}
+.carousel-content-2:hover {
+	background-color: var(--golden-color);
+}
+.carousel-content-2:hover div * {
+	color: var(--main-bg-dark) !important;
+}

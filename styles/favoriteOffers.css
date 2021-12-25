@@ -1,0 +1,100 @@
+/* favorite Offers */
+.fav-prod {
+	margin-top: 60px;
+	padding: 0px 0px;
+	padding-bottom: 60px;
+	background-color: var(--golden-light);
+}
+.fav-prod-head {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+.fav-prod-head span:first-child {
+	font-size: 27px;
+}
+.fav-prod-head span:nth-child(2) {
+	color: var(--ash-color);
+	font-size: 14px;
+}
+.carousel-content {
+	position: relative;
+}
+.carousel-content .prod-status {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: var(--golden-color);
+	border: 1px solid var(--golden-color);
+	font-size: 14px;
+	padding: 3px 7px;
+}
+.carousel-content .prod-status-dir {
+	position: absolute;
+	top: 0;
+	padding: 8px 6px;
+	font-size: 14px;
+	color: var(--dark-light);
+	background-color: var(--default-color);
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+.naming-fav-prod {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 20px;
+}
+.prod-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+.prod-body span:first-child {
+	color: var(--default-color);
+	font-size: 15px;
+}
+.prod-body span:nth-child(2) {
+	color: var(--golden-color);
+}
+.carousel-1 .owl-nav button.owl-prev {
+	top: 47%;
+	left: -19px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+.carousel-1 .owl-nav button.owl-next {
+	top: 47%;
+	right: -19px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+@media (max-width: 599px) {
+	.carousel-1 .owl-nav button.owl-next {
+		top: 47%;
+		right: 16px;
+	}
+	.carousel-1 .owl-nav button.owl-prev {
+		top: 47%;
+		left: 16px;
+	}
+}
