@@ -5,9 +5,9 @@
 /* slider-controller */
 .sliding-btns {
 	position: absolute;
-    bottom: 372px;
-    right: 157px;
-    z-index: 99;
+	bottom: 372px;
+	right: 157px;
+	z-index: 99;
 }
 .sliding-btns span {
 	display: flex;
@@ -27,30 +27,30 @@
 }
 .sliding-btns span:first-child::before {
 	content: "";
-    position: absolute;
-    right: 8px;
-    top: -12px;
-    height: 14px;
-    width: 3px;
-    background-color: var(--default-color);
+	position: absolute;
+	right: 8px;
+	top: -12px;
+	height: 14px;
+	width: 3px;
+	background-color: var(--default-color);
 }
 .sliding-btns span:first-child::after {
 	content: "";
-    position: absolute;
-    right: 8px;
-    top: 20px;
-    height: 8px;
-    width: 3px;
-    background-color: var(--default-color);
+	position: absolute;
+	right: 8px;
+	top: 20px;
+	height: 8px;
+	width: 3px;
+	background-color: var(--default-color);
 }
 .sliding-btns span:nth-child(2)::after {
 	content: "";
-    position: absolute;
-    right: 8px;
-    top: 46px;
-    height: 10px;
-    width: 3px;
-    background-color: var(--default-color);
+	position: absolute;
+	right: 8px;
+	top: 46px;
+	height: 10px;
+	width: 3px;
+	background-color: var(--default-color);
 }
 .intro-img {
 	position: absolute;
@@ -131,7 +131,7 @@
 	z-index: -1;
 	background: #4e5052;
 	transition: all 0.3s ease;
-    border-radius: 5px;
+	border-radius: 5px;
 }
 .shop-btn:hover {
 	color: var(--main-bg-light);
@@ -146,6 +146,19 @@
 }
 
 /* responsive part */
+@media (max-width: 1199px) {
+	.product-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.slick-track {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+}
 @media (max-width: 1183px) {
 	.info-section {
 		padding-left: 30px;
