@@ -3,6 +3,9 @@
     margin-top: 60px;
     background-color: var(--main-bg-dark);
 }
+.work-base {
+    padding: 13px;
+}
 .work-base .col-xl-3 {
     padding-bottom: 35px;
 }
