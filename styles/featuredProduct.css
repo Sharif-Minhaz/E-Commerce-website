@@ -1,83 +1,93 @@
 /* feature products */
 .featured-body {
-    padding-top: 40px;
+	padding-top: 40px;
 }
 .featured-heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 8px;
 }
 .featured-heading span:first-child {
-    font-size: 30px;
+	font-size: 30px;
 }
 .featured-heading span:last-child {
-    font-size: 15px;
-    color: var(--gray-light);
+	font-size: 15px;
+	color: var(--gray-light);
 }
 .featured-row {
-    gap: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 .featured-box {
-    position: relative;
+	position: relative;
+}
+.featured-box img {
+	width: 100%;
 }
 .discount-offer {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    display: inline-block;
-    background-color: var(--dark-color);
-    color: var(--dark-light);
-    font-size: 15px;
-    padding: 4px 6px;
-    transition: background-color 0.3s;
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    -ms-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	display: inline-block;
+	background-color: var(--dark-color);
+	color: var(--dark-light);
+	font-size: 15px;
+	padding: 4px 6px;
+	transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-ms-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
 }
 .types {
-    position: absolute;
-    bottom: 20px;
-    left: 19px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+	position: absolute;
+	bottom: 20px;
+	left: 19px;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
 }
 .types span:first-child {
-    font-size: 14px;
-    color: var(--golden-color);
+	font-size: 14px;
+	color: var(--golden-color);
 }
 .types span:nth-child(2) {
-    font-size: 18px;
-    color: var(--default-color);
+	font-size: 18px;
+	color: var(--default-color);
 }
 .product-price {
-    font-size: 15px;
-    left: 20px;
-    bottom: -10px;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
+	font-size: 15px;
+	left: 20px;
+	bottom: -10px;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
 }
 .featured-box:hover .discount-offer {
-    background-color: var(--golden-color);
+	background-color: var(--golden-color);
 }
 .featured-box:hover .types {
-    position: absolute;
-    bottom: 40px;
+	position: absolute;
+	bottom: 40px;
 }
 .featured-box:hover .product-price {
-    bottom: 10px;
-    visibility: visible;
-    opacity: 1;
+	bottom: 10px;
+	visibility: visible;
+	opacity: 1;
 }
-@media (max-width: 1317px){
+/* @media (max-width: 1199px) {
+	.featured-parent-row .col-xl-4 {
+
+	}
+} */
+/* @media (max-width: 1317px){
     .left-partition .col-12 .featured-img {
         display: flex;
         justify-content: right;
@@ -92,5 +102,50 @@
     }
     .row .col-12 .featured-img .featured-box img {
         width: 300px;
+    }
+} */
+.single-img-partition {
+	height: 90%;
+}
+@media (max-width: 991px) {
+	.featured-parent-row {
+		justify-content: center;
+	}
+	.featured-parent-row .maintain-flex {
+		width: 33% !important;
+	}
+}
+@media (max-width: 759px) {
+	.featured-parent-row .maintain-flex {
+		width: 50% !important;
+	}
+	.featured-parent-row .maintain-flex:last-child {
+		width: 100% !important;
+	}
+	.right-partition {
+		display: flex !important;
+		flex-direction: row;
+        gap: 24px;
+        margin-top: 18px;
+	}
+	.right-partition .featured-img {
+		flex-basis: 50%;
+	}
+}
+@media (max-width: 550px) {
+    .right-partition {
+        flex-direction: column;
+	}
+    .featured-parent-row {
+        gap: 20px;
+    }
+    .featured-parent-row .maintain-flex {
+		width: 100% !important;
+	}
+    .right-partition .featured-img {
+		flex-basis: 100%;
+	}
+    .right-partition {
+        margin-top: 1px;
     }
 }
