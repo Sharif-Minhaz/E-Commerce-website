@@ -22,14 +22,14 @@ window.onscroll = function () {
 };
 
 // news latter
-// const newsLetter = document.querySelector(".newsLatter-wrapper");
-// const clsBtnNewsLatter = document.querySelector(".cls-btn-newsletter");
+const newsLetter = document.querySelector(".newsLatter-wrapper");
+const clsBtnNewsLatter = document.querySelector(".cls-btn-newsletter");
 
-// clsBtnNewsLatter.addEventListener('click', function() {
-// 	newsLetter.classList.add("newsLatter-hide");
-// })
+clsBtnNewsLatter.addEventListener('click', function() {
+	newsLetter.classList.add("newsLatter-hide");
+})
 
-// setTimeout(function() {
-// 	newsLetter.classList.remove("hidden-wrapper");
-// }, 5000);
+setTimeout(function() {
+	newsLetter.classList.remove("hidden-wrapper");
+}, 5000);
 // new code here...
