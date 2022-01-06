@@ -186,8 +186,13 @@ header {
 	font-size: 50px;
 	font-weight: 200;
 }
-.search-input input {
-	width: 600px;
+.search-input {
+	display: flex;
+	width: 60%;
+	justify-content: center;
+}
+.search-input #search-box {
+	width: 100%;
 	padding: 14px 16px;
 	outline: none;
 	border: none;
@@ -399,5 +404,8 @@ header {
 @media (max-width: 750px) {
 	.container-body {
 		padding: 15px 15px 0px 15px;
+	}
+	.search-input {
+		width: 85%;
 	}
 }

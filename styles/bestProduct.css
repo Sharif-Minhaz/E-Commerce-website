@@ -30,18 +30,16 @@
 .mix-container {
 	display: flex;
     flex-wrap: wrap;
+	gap: 31.5px;
 }
 .mix-container .mix {
-	flex-basis: 25%;
-    width: 100%;
+	flex-basis: 23%;
+    width: 100% !important;
 	vertical-align: top;
 	background: #fff;
 	border-radius: 2px;
 	margin-bottom: 1rem;
 	position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 .best-product {
 	font-weight: 500;
@@ -50,6 +48,9 @@
 .product-img {
 	position: relative;
     width: 100%;
+}
+.product-img img {
+	width: 100%;
 }
 .panel {
 	position: absolute;
