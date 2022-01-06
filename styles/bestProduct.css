@@ -1,11 +1,23 @@
 /* Controls*/
 .controls {
 	display: flex;
+	flex-direction: row;
 	padding: 12px 0px 12px 0px;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid rgb(228, 228, 228);
 	margin-bottom: 37px;
+}
+.controls .best-product,
+.controls .mix-controller,
+.controls a {
+	width: 100%;
+}
+.mix-controller {
+	text-align: center;
+}
+.mix-controller span {
+	font-size: 1rem;
 }
 .control {
 	position: relative;
@@ -20,21 +32,22 @@
 .mixitup-control-active::after {
 	content: "";
 	position: absolute;
-	height: 2px;
+	height: 3px;
 	width: 100%;
 	background: var(--golden-color);
-	bottom: -22px;
+	bottom: -21px;
 	left: 0;
 }
 /* Target Elements*/
 .mix-container {
 	display: flex;
-    flex-wrap: wrap;
-	gap: 31.5px;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.66%;
 }
 .mix-container .mix {
 	flex-basis: 23%;
-    width: 100% !important;
+	width: 100%;
 	vertical-align: top;
 	background: #fff;
 	border-radius: 2px;
@@ -47,7 +60,7 @@
 }
 .product-img {
 	position: relative;
-    width: 100%;
+	width: 100%;
 }
 .product-img img {
 	width: 100%;
@@ -171,20 +184,43 @@
 .pink-block {
 	background-color: var(--pink-color);
 }
-/* Grid Breakpoints*/
-/* 1 Columns */
-/* .mix {
-	width: 100%;
-} */
-/* 2 Columns */
-/* @media screen and (min-width: 541px) {
-	.mix {
-		width: calc(100% / 2 - (((2 - 1) * 1rem) / 2));
+.sm-best-product-title {
+	display: none;
+}
+@media (max-width: 1134px) {
+	.sm-best-product-title {
+		display: block;
 	}
-} */
-/* 4 Columns */
-/* @media screen and (min-width: 961px) {
-	.mix {
-		width: calc(100% / 4 - (((4 - 1) * 1rem) / 4));
+	.md-best-product-title {
+		display: none;
 	}
-} */
+	.mix-controller {
+		display: flex;
+		flex-wrap: nowrap;
+		text-align: left;
+	}
+	.mixitup-control-active::after {
+		bottom: -14px;
+	}
+}
+@media (max-width: 1015px) {
+	.review {
+		font-size: 12px !important;
+	}
+}
+@media (max-width: 885px) {
+	.mix-container .mix {
+		flex-basis: 45%;
+	}
+}
+@media (max-width: 790px) {
+	.mix-controller .control {
+		white-space: nowrap;
+		font-size: 14px;
+	}
+}
+@media (max-width: 570px) {
+	.mix-container .mix {
+		flex-basis: 100%;
+	}
+}
