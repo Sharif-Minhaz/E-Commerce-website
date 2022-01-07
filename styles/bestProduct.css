@@ -66,6 +66,7 @@
 }
 .product-img img {
 	width: 100%;
+	cursor: zoom-in;
 }
 .panel {
 	position: absolute;
@@ -173,6 +174,7 @@
 	height: 14px;
 	width: 18px;
 	margin-right: 5px;
+	cursor: pointer;
 }
 .black-block {
 	background-color: var(--dark-color);
@@ -208,6 +210,11 @@
 @media (max-width: 1015px) {
 	.review {
 		font-size: 12px !important;
+	}
+}
+@media (min-width: 884px) {
+	.mix-grid {
+		flex-basis: 31% !important;
 	}
 }
 @media (max-width: 885px) {

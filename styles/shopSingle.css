@@ -22,3 +22,54 @@
     font-size: 15px;
     gap: 25px;
 }
+.derived-color {
+    color: rgb(228, 228, 228);
+}
+.selected-color {
+    color: rgb(15, 15, 15);
+}
+.pagination {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+.pagination span:hover {
+    background-color: black;
+    color: white;
+}
+.pagination div {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    width: 35px;
+    height: 40px;
+    align-items: flex-end;
+    justify-content: center;
+}
+@media (max-width: 884px) {
+    .grid-icons {
+        display: none;
+    }
+}
+@media (max-width: 645px) {
+    .sort-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

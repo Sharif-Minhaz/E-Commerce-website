@@ -114,26 +114,32 @@
 			<div class="container-body">
 				<div class="grid-controls">
 					<div class="grid-icons">
-						<span><i class="fas fa-th"></i></span>						
-						<span><i class="fas fa-border-all"></i></span>
+						<span onclick="fourLayout();" title="Four Layout">
+							<i class="fas fa-th"></i>
+						</span>						
+						<span onclick="threeLayout();" title="Three Layout" class="derived-color">
+							<i class="fas fa-border-all"></i>
+						</span>
 					</div>
 					<div class="sort-options">
 						<span>Showing 1–20 of 500 results </span>
-						<div>
-							<span>Sort by: </span>
-							<select name="select_sort1" id="select_sort1">
-								<option value="Featured">Featured</option>
-								<option value="Featured1">Featured1</option>
-								<option value="Featured2">Featured2</option>
-							</select>
-						</div>
-						<div>
-							<span>Sort by: </span>
-							<select name="select_sort2" id="select_sort2">
-								<option value="Price">Price</option>
-								<option value="Price1">Price1</option>
-								<option value="Price2">Price2</option>
-							</select>
+						<div class="d-flex gap-3">
+							<div>
+								<span>Sort by: </span>
+								<select name="select_sort1" id="select_sort1">
+									<option value="Featured">Featured</option>
+									<option value="Featured1">Featured1</option>
+									<option value="Featured2">Featured2</option>
+								</select>
+							</div>
+							<div>
+								<span>Sort by: </span>
+								<select name="select_sort2" id="select_sort2">
+									<option value="Price">Price</option>
+									<option value="Price1">Price1</option>
+									<option value="Price2">Price2</option>
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -566,6 +572,14 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="pagination">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<div>....</div>
+				<span>9</span>
 			</div>
 		</section>
 		<!-- footer section -->
