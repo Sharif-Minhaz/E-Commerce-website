@@ -1,0 +1,24 @@
+.grid-controls {
+    padding: 20px 0px 20px 0px;
+    margin: 12px 12px 40px 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.grid-icons {
+    display: flex;
+    gap: 10px;
+}
+.grid-icons span {
+    font-size: 25px;
+    cursor: pointer;
+}
+.sort-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    gap: 25px;
+}
