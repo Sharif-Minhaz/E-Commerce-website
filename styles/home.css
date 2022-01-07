@@ -1,3 +1,6 @@
+.main-nav {
+	background-color: var(--main-bg-dark);
+}
 /* header section */
 .product-section {
 	position: relative;
@@ -106,12 +109,10 @@
 .product-section:hover {
 	cursor: grab;
 	cursor: -webkit-grab;
-
 }
 .product-section:active {
 	cursor: grabbing;
 	cursor: -webkit-grabbing;
-
 }
 .discount {
 	color: var(--golden-color);

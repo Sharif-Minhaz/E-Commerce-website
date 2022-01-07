@@ -21,6 +21,7 @@
 	--wrapper-color: #000000d3;
 	--ash-color: #8e8e8e;
 	--milky-color: #f7f7f7;
+	--breadcrumb-section-color: #fcfcfc;
 }
 body {
 	scroll-behavior: smooth;
@@ -74,7 +75,7 @@ header {
 	align-items: center;
 	padding: 25px 30px;
 	color: var(--default-color);
-	background-color: var(--main-bg-dark);
+	background-color: var(--main-bg-light);
 	z-index: 999;
 }
 .main-nav .links,
@@ -366,6 +367,17 @@ header {
 .wrap-link.extra-padding {
 	padding-bottom: 8px;
 	display: flex;
+}
+/* breadcrumb */
+.breadcrumb-section {
+	background-color: var(--breadcrumb-section-color);
+}
+.breadcrumb-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0px 50px 0px;
 }
 /* responsive part */
 @media (max-width: 1183px) {
