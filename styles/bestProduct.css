@@ -43,7 +43,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2.66%;
+	column-gap: 2%;
+	row-gap: 27px;
+	padding-bottom: 60px;
 }
 .mix-container .mix {
 	flex-basis: 23%;
@@ -121,7 +123,7 @@
 	position: absolute;
 	left: 0;
 	display: inline-block;
-	border: 2px solid var(--default-color);
+	border: 1px solid var(--default-color);
 	padding: 12px 3px;
 	font-size: 14px;
 	writing-mode: vertical-rl;
@@ -209,6 +211,10 @@
 	}
 }
 @media (max-width: 885px) {
+	.mix-container {
+		column-gap: 2.8%;
+		row-gap: 20px;
+	}
 	.mix-container .mix {
 		flex-basis: 45%;
 	}
