@@ -32,4 +32,4 @@ clsBtnNewsLatter.addEventListener('click', function() {
 setTimeout(function() {
 	newsLetter.classList.remove("hidden-wrapper");
 }, 5000);
-// new code here...
+

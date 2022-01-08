@@ -63,6 +63,7 @@ let imageBase = document.getElementById("opImage");
 let productCountCng = document.getElementById("product-count");
 let discountPriceCng = document.getElementById("discount-price");
 let mainPriceCng = document.getElementById("main-price");
+let imgHeading = document.getElementsByClassName("product-heading")[0];
 function expandImg(imageId) {
 	let imageID = document.getElementById(imageId);
 	if (imageBase.src != imageID.src) {
@@ -70,23 +71,24 @@ function expandImg(imageId) {
 		productCountCng.innerHTML = "1";
 		switch (imageId) {
 			case "img1":
-				passingValue(55, 110);
+				passingValue(55, 110, "White chair tool making easer");
 				break;
 			case "img2":
-				passingValue(60, 120);
+				passingValue(60, 120, "Office chair with smooth wheel");
 				break;
 			case "img3":
-				passingValue(40, 80);
+				passingValue(40, 80, "Steel chair traditional version");
 				break;
 			case "img4":
-				passingValue(65, 130);
+				passingValue(65, 130, "Leather chair for comfort plus");
 				break;
 		}
 	}
 	magnify("opImage", 3);
 }
 
-function passingValue(discount, main) {
+function passingValue(discount, main, heading) {
+	imgHeading.innerHTML = heading;
 	discountPriceCng.innerHTML = discount.toFixed(2);
 	mainPriceCng.innerHTML = main.toFixed(2);
 	productCount = Number(productCountCng.innerHTML);
