@@ -157,7 +157,7 @@
 	flex-direction: row;
 	color: var(--golden-color);
 	font-size: 14px;
-	padding: 7px;
+	padding: 7px 7px 7px 0px;
 }
 .product-name {
 	font-weight: 500;

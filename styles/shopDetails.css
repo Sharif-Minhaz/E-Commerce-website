@@ -1,0 +1,155 @@
+.all-product-img {
+	display: flex;
+	padding-top: 10px;
+	gap: 11px;
+}
+.all-product-img img {
+	width: 90px;
+	cursor: pointer;
+}
+.product-img-single div img {
+	width: 100%;
+}
+.product-cart {
+	padding: 20px 0px 20px 0px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.product-count {
+	display: flex;
+	padding: 30px 0px 30px 0px;
+}
+.product-count span,
+.product-like {
+	display: inline-block;
+	border: 1px solid var(--dark-color);
+	width: 70px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+}
+.product-count span:nth-child(2) {
+	border-left: none;
+	border-right: none;
+	cursor: default;
+}
+.product-like {
+	width: 60px;
+}
+.cart-btn {
+	width: 123px;
+	height: 40px;
+	border: none;
+	background-color: var(--dark-color);
+	color: var(--main-bg-light);
+	padding: 4px 7px;
+	font-size: 14px;
+}
+.product-status {
+	padding: 20px 0px 20px 0px;
+}
+.product-brand {
+	padding-bottom: 10px;
+}
+h5 span {
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid rgb(238, 238, 238);
+}
+.padding-input-content {
+    padding-left: 24px;
+}
+.derived-box {
+    display: flex;
+    align-items: center !important;
+	background-color: var(--content-bg);
+}
+.review-content {
+	padding: 30px;
+	width: 100%;
+}
+.review-content p:nth-child(2) {
+    font-size: 14px;
+    padding-top: 6px;
+}
+.review-content p:nth-child(3) {
+    font-size: 15px;
+}
+.review-content a span {
+	text-decoration: underline;
+	color: var(--golden-color);
+}
+.user-rating {
+	display: flex;
+	gap: 15px;
+}
+.stars-gold {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.stars-gold span {
+	color: var(--golden-color);
+	cursor: pointer;
+	font-size: 13px;
+}
+/* ratting */
+.rate {
+	display: flex;
+	align-items: flex-start;
+	margin-top: -7px;
+	height: 50px;
+	flex-direction: row-reverse;
+}
+.rate:not(:checked) > input {
+	position: absolute;
+	top: -9999px;
+}
+.rate:not(:checked) > label {
+	float: right;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 25px;
+	color: rgb(214, 214, 214);
+}
+.rate:not(:checked) > label:before {
+	content: "★ ";
+}
+.rate > input:checked ~ label {
+	color: var(--golden-color);
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+	color: #b9b288;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+	color: #c59b08;
+}
+/* review */
+.review-input {
+	width: 100%;
+}
+.review-own-details {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-top: 25px;
+}
+.main-fields {
+	display: flex;
+	gap: 20px;
+}
+.main-fields div {
+	flex-basis: 50%;
+}

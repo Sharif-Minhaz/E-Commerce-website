@@ -125,46 +125,6 @@
 	color: var(--gray-light);
 	font-size: 14px;
 }
-.shop-btn {
-	padding: 10px 15px;
-	width: 130px;
-	margin-top: 20px;
-	background-color: var(--dark-color);
-	color: var(--main-bg-light);
-	border: none;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	position: relative;
-	z-index: 1;
-}
-.shop-btn:after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	top: 0;
-	left: 0;
-	direction: ltr;
-	z-index: -1;
-	background: #4e5052;
-	transition: all 0.3s ease;
-	border-radius: 5px;
-}
-.shop-btn:hover {
-	color: var(--main-bg-light);
-}
-.shop-btn:hover:after {
-	left: 0;
-	right: auto;
-	width: 100%;
-}
-.shop-btn:active {
-	top: 2px;
-}
-
 /* responsive part */
 @media (max-width: 1183px) {
 	.info-section {

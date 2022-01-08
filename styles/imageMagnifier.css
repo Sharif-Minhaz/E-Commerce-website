@@ -1,0 +1,31 @@
+.img-magnifier-container {
+	position: relative;
+}
+.img-magnifier-glass {
+	position: absolute;
+	border: 3px solid var(--dark-color);
+	border-radius: 50%;
+	cursor: none;
+	/*Set the size of the magnifier glass:*/
+	width: 70px;
+	height: 70px;
+}
+.img-magnifier-glass::after {
+    position: absolute;
+    content: "";
+    height: 34px;
+    left: -5px;
+    width: 7px;
+    background-color: var(--dark-color);
+    bottom: -21px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
