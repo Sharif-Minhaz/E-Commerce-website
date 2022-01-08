@@ -156,6 +156,9 @@ h5 span {
 .container-body h5 {
 	padding-top: 30px;
 }
+.new-available {
+	left: 40px;
+}
 @media (max-width: 913px) {
 	.product-count span {
 		width: 60px;

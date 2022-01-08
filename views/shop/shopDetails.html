@@ -127,14 +127,16 @@
 						<div class="products-images">
 							<div class="product-img-single">
 								<div class="img-magnifier-container">
-									<img id="opImage" src="../../assets/images/shop-img-details-1.png" alt="img-details1">
+									<span class="new-available">50% off</span>
+									<div class="img-magnifier-glass"></div>
+									<img id="opImage" onmousemove="magnify('opImage', 3);" src="../../assets/images/shop-img-details-1.png" alt="img-details1">
 								</div>
 							</div>
 							<div class="all-product-img">
-								<img src="../../assets/images/shop-img-details-1.png" alt="img1">
-								<img src="../../assets/images/shop-img-details-2.png" alt="img2">
-								<img src="../../assets/images/shop-img-details-3.png" alt="img3">
-								<img src="../../assets/images/shop-img-details-4.png" alt="img4">
+								<img id="img1" onclick="expandImg('img1');" src="../../assets/images/shop-img-details-1.png" alt="img1">
+								<img id="img2" onclick="expandImg('img2');" src="../../assets/images/shop-img-details-2.png" alt="img2">
+								<img id="img3" onclick="expandImg('img3');" src="../../assets/images/shop-img-details-3.png" alt="img3">
+								<img id="img4" onclick="expandImg('img4');" src="../../assets/images/shop-img-details-4.png" alt="img4">
 							</div>
 						</div>
 					</div>
@@ -155,7 +157,8 @@
 								</div>
 							</div>
 							<div class="product-price">
-								$55.00 <del>$120.00</del> 
+								$<span id="discount-price">55.00</span> 
+								<del class="ps-1">$<span id="main-price">110.00</span></del> 
 							</div>
 							<div class="product-colors">
 								<div class="black-block"></div>
@@ -165,9 +168,9 @@
 							<!-- cart section here -->
 							<div class="product-cart">
 								<div class="product-count">
-									<span> - </span>
-									<span> 1 </span>
-									<span> + </span>
+									<span onclick="decreaseCount();"> - </span>
+									<span id="product-count"> 1 </span>
+									<span onclick="increaseCount();"> + </span>
 								</div>
 								<button class="cart-btn scale-none">
 									Add To Cart
@@ -175,8 +178,8 @@
 								<button class="cart-btn d-none">
 									Cart
 								</button>
-								<div class="product-like">
-									<span><i class="far fa-heart"></i></span>
+								<div onclick="likeProduct();" class="product-like">
+									<span><i class="far fa-heart liking-product"></i></span>
 								</div>
 							</div>
 							<!-- product details -->
@@ -510,6 +513,7 @@
 		<script src="../../scripts/slick.js"></script>
 		<script src="../../scripts/main.js"></script>
 		<script src="../../scripts/imageMagnifier.js"></script>
+		<script src="../../scripts/shop.js"></script>
 		<script src="../../scripts/custom.js"></script>
 	</body>
 </html>

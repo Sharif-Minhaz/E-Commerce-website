@@ -2,9 +2,8 @@ function magnify(imgID, zoom) {
 	let img, glass, w, h, bw;
 	img = document.getElementById(imgID);
 
-	/* Create magnifier glass: */
-	glass = document.createElement("DIV");
-	glass.setAttribute("class", "img-magnifier-glass");
+	glass = document.getElementsByClassName("img-magnifier-glass")[0];
+	glass.style.display = "block";
 
 	/* Insert magnifier glass: */
 	img.parentElement.insertBefore(glass, img);
@@ -69,4 +68,3 @@ function magnify(imgID, zoom) {
 		return { x: x, y: y };
 	}
 }
-magnify("opImage", 3);

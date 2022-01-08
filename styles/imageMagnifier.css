@@ -2,6 +2,7 @@
 	position: relative;
 }
 .img-magnifier-glass {
+    display: none;
 	position: absolute;
 	border: 3px solid var(--dark-color);
 	border-radius: 50%;
