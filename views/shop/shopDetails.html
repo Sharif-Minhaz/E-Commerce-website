@@ -128,7 +128,7 @@
 						<div class="products-images">
 							<div class="product-img-single">
 								<div class="img-magnifier-container">
-									<span class="new-available">50% off</span>
+									<span class="new-available mod-pl-label">50% off</span>
 									<div class="img-magnifier-glass"></div>
 									<img id="opImage" onmousemove="magnify('opImage', 3);" src="../../assets/images/shop-img-details-1.png" alt="img-details1">
 								</div>
@@ -262,21 +262,21 @@
 							</div>
 						</div>
 						<!-- write something -->
-						<span>Write something</span><br>
+						<span class="text-muted">Write something</span><br>
 						<textarea class="form-control review-input" name="review" rows="6"></textarea>
 						<form action="/views/shop/shopDetails.html" class="review-own-details" method="get">
 							<div class="main-fields">
 								<div class="name">
-									<label for="name">Your Name*</label>
+									<label class="text-muted" for="name">Your Name*</label>
 									<input type="text" class="form-control review-input" required>
 								</div>
 								<div class="email">
-									<label for="email">Your Email*</label>
+									<label class="text-muted" for="email">Your Email*</label>
 									<input type="email" class="form-control review-input" required>
 								</div>
 							</div>
 							<div class="remember-submit-btn">
-								<input style="cursor: pointer;" type="checkbox"> <span class="text-muted">Save my name, email, and website for next time.</span>
+								<input class="form-check-input" style="cursor: pointer;" type="checkbox"> <span class="text-muted">Save my name, email, and website for next time.</span>
 								<br>
 								<button class="shop-btn" type="submit">Submit</button>
 							</div>
