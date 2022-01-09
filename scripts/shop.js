@@ -34,8 +34,13 @@ function likeProduct() {
 	}
 }
 
+// for total bill in cart page
+let totalBill = document.getElementById("total-bill");
+
 let productCount = Number(document.getElementById("product-count").innerHTML);
-let discountPrice = Number(document.getElementsByClassName("discount-price")[0].innerHTML);
+let discountPrice = Number(
+	document.getElementsByClassName("discount-price")[0].innerHTML
+);
 let mainPrice = Number(document.getElementById("main-price").innerHTML);
 function increaseCount() {
 	productCount < 100 ? (productCount += 1) : (productCount = productCount);
@@ -46,6 +51,7 @@ function increaseCount() {
 	document.getElementById("main-price").innerHTML = (
 		mainPrice * productCount
 	).toFixed(2);
+	totalBill.innerHTML = (mainPrice * productCount + 13).toFixed(2);
 }
 
 function decreaseCount() {
@@ -57,6 +63,7 @@ function decreaseCount() {
 	document.getElementById("main-price").innerHTML = (
 		mainPrice * productCount
 	).toFixed(2);
+	totalBill.innerHTML = (mainPrice * productCount + 13).toFixed(2);
 }
 
 let imageBase = document.getElementById("opImage");

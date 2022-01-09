@@ -140,7 +140,7 @@
                         </div>
                         <div class="p-main-section">
                             <div class="ph-price">
-                                $<span>1300.00</span>
+                                $<span>130.00</span>
                             </div>
                             <div class="price-indicators">
                                 <span onclick="decreaseCount();"> - </span>
@@ -148,13 +148,61 @@
                                 <span onclick="increaseCount();"> + </span>
                             </div>
                             <div class="ph-total">
-                                $<span id="main-price" class="discount-price">1300.00</span>
+                                $<span id="main-price">130.00</span>
                             </div>
                         </div>
                     </div>
                 </div>
-			</div>
-		</section>
+                <!-- cart total -->
+                <div class="row cart-total-rev">
+                    <div class="col-md-6 col-12">
+                        <div class="coupon">
+                            <input type="text" class="form-control" placeholder="Enter coupon code">
+                            <button class="shop-btn"> Apply </button>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="product-whole-cal">
+                            <div class="heading">
+                                <h5>Cart Total</h5>
+                            </div>
+                            <div class="total">
+                                <div class="subtotal">
+                                    Total
+                                </div>
+                                <div class="price">
+                                    $<span class="discount-price">130.00</span>
+                                </div>
+                            </div>
+                            <div class="shipping-add">
+                                <div class="ship-des">
+                                    <h5>Shipping:</h5>
+                                    <span>Flat rate: </span>
+                                    <span>Shipping to MA.</span>
+                                </div>
+                                <div class="shipping-charge">
+                                    $<span id="shipping-charge">13.00</span>
+                                </div>
+                            </div>
+                            <div class="cng-add">
+                                <h5>Shipping Address:</h5>
+                                <div contenteditable="true">Pirojpur, Borishal</div>
+                            </div>
+                            <div class="overall">
+                                <span class="total">Overall</span>
+                                <div class="total-bill">
+                                    $<span id="total-bill">143.00</span>
+                                </div>
+                            </div>
+                            <div class="confirmation">
+                                <a href="#"><span>Update cart <i class="fas fa-pencil-alt"></i></span></a>
+                                <button class="shop-btn text-center">Proceed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 		<!-- footer section -->
 		<footer class="container-fluid">
 			<div class="container-body">

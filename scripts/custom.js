@@ -1,7 +1,3 @@
-// mixitup
-let containerEl = document.querySelector(".mix-container");
-let mixer = mixitup(containerEl);
-
 let toTopbtn = document.getElementsByClassName("goTop")[0];
 
 let pin = document.getElementById("pin");
