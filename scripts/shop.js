@@ -35,12 +35,12 @@ function likeProduct() {
 }
 
 let productCount = Number(document.getElementById("product-count").innerHTML);
-let discountPrice = Number(document.getElementById("discount-price").innerHTML);
+let discountPrice = Number(document.getElementsByClassName("discount-price")[0].innerHTML);
 let mainPrice = Number(document.getElementById("main-price").innerHTML);
 function increaseCount() {
 	productCount < 100 ? (productCount += 1) : (productCount = productCount);
 	document.getElementById("product-count").innerHTML = productCount;
-	document.getElementById("discount-price").innerHTML = (
+	document.getElementsByClassName("discount-price")[0].innerHTML = (
 		discountPrice * productCount
 	).toFixed(2);
 	document.getElementById("main-price").innerHTML = (
@@ -51,7 +51,7 @@ function increaseCount() {
 function decreaseCount() {
 	productCount > 1 ? (productCount -= 1) : (productCount = productCount);
 	document.getElementById("product-count").innerHTML = productCount;
-	document.getElementById("discount-price").innerHTML = (
+	document.getElementsByClassName("discount-price")[0].innerHTML = (
 		discountPrice * productCount
 	).toFixed(2);
 	document.getElementById("main-price").innerHTML = (
@@ -61,7 +61,7 @@ function decreaseCount() {
 
 let imageBase = document.getElementById("opImage");
 let productCountCng = document.getElementById("product-count");
-let discountPriceCng = document.getElementById("discount-price");
+let discountPriceCng = document.getElementsByClassName("discount-price")[0];
 let mainPriceCng = document.getElementById("main-price");
 let imgHeading = document.getElementsByClassName("product-heading")[0];
 function expandImg(imageId) {
