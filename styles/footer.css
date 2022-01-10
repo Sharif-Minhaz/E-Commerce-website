@@ -51,7 +51,7 @@ footer {
     text-align: right;
 }
 .footer-links {
-    padding-top: 28px;
+    padding: 28px 0px 28px 0px;
     display: flex;
     flex-direction: column;
     font-size: 15px;

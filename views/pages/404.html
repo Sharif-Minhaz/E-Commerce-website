@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>eCommerce - website | 404</title>
+		<title>404 error</title>
 		<link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="../../assets/lib/bootstrap-5.1/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="../../styles/bestProduct.css" />
 		<link rel="stylesheet" href="../../styles/footer.css" />
 		<link rel="stylesheet" href="../../styles/cart.css" />
+		<link rel="stylesheet" href="../../styles/404.css" />
+
 	</head>
 	<body>
 		<!-- go to top button -->
@@ -112,16 +114,29 @@
 		<!-- breadcrumb content -->
 		<section class="container-fluid breadcrumb-section">
 			<div class="breadcrumb-area">
-				<h3>CHECKOUT</h3>
+				<h3>404 ERROR</h3>
 				<div class="breadcrumb-links">
-					<a href="../../index.html">Home</a> - <a href="#">Checkout</a>
+					<a href="../../index.html">Home</a> - <a href="#">404 error</a>
 				</div>
 			</div>
 		</section>
 		<!-- product description -->
 		<section class="container-fluid">
-			<div class="container-body">
-
+			<div class="container-body error-container">
+				<center>
+					<h4 class="sp-margin-100">404 not Found</h4>
+				</center>
+				<h5 class="text-center text-muted pb-3">Your visited page not found. Check url or search again.</h5>
+				<hr>
+				<div class="action-error">
+					<div class="search-div">
+						<input class="form-control" type="search" placeholder="Search...">
+						<button class="btn" type="submit"><i class="fas fa-search"></i></button>
+					</div>
+					<center>
+						<a href="../../index.html"><button class="return-btn btn btn-outline-secondary">BACK TO HOME</button></a>
+					</center>
+				</div>
             </div>
         </section>
 		<!-- footer section -->
@@ -210,5 +225,6 @@
 		<script src="../../scripts/shop.js"></script>
 		<script src="../../scripts/custom.js"></script>
 
+		
 	</body>
 </html>

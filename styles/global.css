@@ -44,6 +44,9 @@ input::-webkit-calendar-picker-indicator {
 select:hover {
 	cursor: pointer;
 }
+hr {
+	background-color: var(--ash-color);
+}
 /* container body */
 .container-body {
 	padding: 60px 60px 0px 60px;
@@ -211,6 +214,10 @@ header {
 .links a:hover,
 .menus a:hover {
 	color: var(--golden-color);
+}
+.menus span {
+	user-select: none;
+	-webkit-user-select: none;
 }
 /* search bar wrapper */
 .search-bar-wrapper {
