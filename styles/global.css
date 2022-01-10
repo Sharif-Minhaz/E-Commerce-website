@@ -35,7 +35,7 @@ label {
     font-size: 14px;
     padding-bottom: 7px;
 }
-input[type=radio] {
+input[type=radio], input[type=checkbox] {
 	cursor: pointer;
 }
 input::-webkit-calendar-picker-indicator {
@@ -438,6 +438,9 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 50px 0px 50px 0px;
+}
+.padding-section-contact {
+	padding: 30px 0px 80px 0px;
 }
 /* responsive part */
 @media (max-width: 1183px) {
