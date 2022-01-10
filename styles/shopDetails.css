@@ -49,6 +49,10 @@
 	padding: 4px 7px;
 	font-size: 14px;
 }
+.cart-btn:hover {
+	color: white;
+	background-color: rgb(26, 26, 26);
+}
 .product-status {
 	padding: 20px 0px 20px 0px;
 }
@@ -205,7 +209,7 @@ h5 span {
 	.scale-none {
 		display: none;
 	}
-	button.d-none {
+	span.d-none {
 		display: block !important;
 	}
 }

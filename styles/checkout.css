@@ -1,0 +1,41 @@
+.card-info div .checkout-input-section {
+    padding: 10px 0px;
+}
+.payment-method-section {
+    padding-bottom: 40px;
+}
+.payment-method-section table {
+    border: 1px solid var(--main-bg-dark);
+    padding: 20px;
+    width: 100%;
+}
+.payment-method-section table td {
+    border: 1px solid var(--main-bg-dark);
+    padding: 18px 19px;
+    font-size: 14px;
+}
+.payment-method-section table td:last-child {
+    text-align: right;
+}
+.payment-method-section table th {
+    padding: 19px 18px;
+    background-color: var(--main-bg-dark);
+}
+.payment-method-section table th:last-child {
+    text-align: right;
+}
+#bank, #cash {
+    width: 96%;
+    margin-left: 22px;
+}
+.policy-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+.policy-payment button {
+    width: 220px;
+    height: 55px;
+    font-size: 14px;
+}

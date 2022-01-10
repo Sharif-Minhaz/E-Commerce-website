@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="../../styles/bestProduct.css" />
 		<link rel="stylesheet" href="../../styles/footer.css" />
 		<link rel="stylesheet" href="../../styles/cart.css" />
+        <link rel="stylesheet" href="../../styles/checkout.css">
 	</head>
 	<body>
 		<!-- go to top button -->
@@ -118,10 +119,107 @@
 				</div>
 			</div>
 		</section>
-		<!-- product description -->
+		<!-- checkout description -->
 		<section class="container-fluid">
 			<div class="container-body">
-
+                <form action="./checkout.html" class="row">
+                    <div class="col-md-6 col-12 card-info">
+                        <h5>Billing Address</h5>
+                        <div>
+                            <div class="checkout-input-section">
+                                <label class="text-muted" for="fname">Full Name*</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="checkout-input-section">
+                                <label class="text-muted" for="address">Company Name (optional)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="checkout-input-section d-flex gap-3">
+                                <div class="country w-100">
+                                    <label class="text-muted" for="country">Country*</label>
+                                    <select class="form-select" name="country" id="country">
+                                        <option value="--select country--"> --select country-- </option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="USA">USA</option>
+                                        <option value="India">India</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="China">China</option>
+                                    </select>
+                                </div>
+                                <div class="postal-code w-100">
+                                    <label class="text-muted" for="postal-code">Postal code*</label>
+                                    <input type="number" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="checkout-input-section d-flex gap-3">
+                                <div class="zip-code w-100">
+                                    <label class="text-muted" for="zip-code">Zip code*</label>
+                                    <input type="number" class="form-control" required>
+                                </div>
+                                <div class="validity w-100">
+                                    <label class="text-muted" for="validity">Card validity*</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 payment-method-section">
+                        <table class="payment-method">
+                            <tr>
+                                <th>Product Info</th>
+                                <th>Product Price</th>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Main price</td>
+                                <td class="text-muted">$130.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">Shipping fee</td>
+                                <td class="text-muted">$13.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$143.00</td>
+                            </tr>                            
+                            <tr>
+                                <td colspan = "2">
+                                    <div>
+                                        <div class="banking">
+                                            <div class="d-flex">
+                                                <input id="banking" name="payment" onclick="cashMethodAction(this);" class="form-check-input me-2" type="radio" value="bank" checked>
+                                                <label for="banking"> Bank </label>
+                                            </div>
+                                            <select class="form-select mb-4" id="bank">
+                                                <option value=1> --Send a check-- </option>
+                                                <option value=2>Western Bank</option>
+                                                <option value=3>East West Bank</option>
+                                            </select>
+                                        </div>
+                                        <div class="payment-process">
+                                            <div class="d-flex">
+                                                <input id="cashDel" name="payment" onclick="cashMethodAction(this);" class="form-check-input me-2" type="radio" value="cash">
+                                                <label for="cashDel"> Cash On Delivery </label>
+                                            </div>
+                                            <select class="form-select mb-4" id="cash" disabled>
+                                                <option value=4> --Pay With Cash-- </option>
+                                                <option value=5>USD ($)</option>
+                                                <option value=6>TAKA (৳)</option>
+                                                <option value=7>POUND (£)</option>
+                                                <option value=8>RUPEE (₹)</option>
+                                                <option value=9>EURO (€)</option>
+                                                <option value=10>RMB (¥)</option>
+                                            </select>
+                                        </div>
+                                        <div class="policy-payment">
+                                            <a href="#">Privacy policy</a>
+                                            <button type="submit" class="btn shop-btn mt-0">Proceed To Payment</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
             </div>
         </section>
 		<!-- footer section -->

@@ -66,6 +66,7 @@ function decreaseCount() {
 	totalBill.innerHTML = (mainPrice * productCount + 13).toFixed(2);
 }
 
+// image popup
 let imageBase = document.getElementById("opImage");
 let productCountCng = document.getElementById("product-count");
 let discountPriceCng = document.getElementsByClassName("discount-price")[0];
@@ -101,4 +102,17 @@ function passingValue(discount, main, heading) {
 	productCount = Number(productCountCng.innerHTML);
 	discountPrice = Number(discountPriceCng.innerHTML);
 	mainPrice = Number(mainPriceCng.innerHTML);
+}
+
+// payment group
+function cashMethodAction(e) {
+	let cash = document.getElementById("cash");
+	let bank = document.getElementById("bank");
+	if (e.value == "bank" && e.checked == true) {
+		cash.disabled = true;
+		bank.disabled = false;
+	} else {
+		bank.disabled = true;
+		cash.disabled = false;
+	}
 }

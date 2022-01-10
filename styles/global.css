@@ -31,6 +31,19 @@ a {
 	color: var(--default-color);
 	text-decoration: none;
 }
+label {
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+input[type=radio] {
+	cursor: pointer;
+}
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+select:hover {
+	cursor: pointer;
+}
 /* container body */
 .container-body {
 	padding: 60px 60px 0px 60px;
