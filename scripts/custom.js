@@ -17,15 +17,22 @@ window.onscroll = function () {
 	backTotop();
 };
 
+// intro slider
+const slider1 = document.getElementById("slider1");
+const slider2 = document.getElementById("slider2");
+
+function changeSlider() {
+		
+}
+
 // news latter
 const newsLetter = document.querySelector(".newsLatter-wrapper");
 const clsBtnNewsLatter = document.querySelector(".cls-btn-newsletter");
 
-clsBtnNewsLatter.addEventListener('click', function() {
+clsBtnNewsLatter.addEventListener("click", function () {
 	newsLetter.classList.add("newsLatter-hide");
-})
+});
 
-setTimeout(function() {
+setTimeout(function () {
 	newsLetter.classList.remove("hidden-wrapper");
 }, 5000);
-

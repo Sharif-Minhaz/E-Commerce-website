@@ -3,7 +3,7 @@ $(function () {
 	$(".single-item").slick();
 	// fade element
 	$(".fade-effect").slick({
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		fade: true,
